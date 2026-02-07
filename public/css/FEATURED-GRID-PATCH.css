@@ -1,0 +1,26 @@
+/* ============================================
+   FEATURED GRID - 3'LÜ DÜZEN
+   ============================================
+   Bu kodu style.css dosyasının .featured-grid
+   bölümüne ekleyin veya değiştirin
+   ============================================ */
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 video yan yana */
+    gap: 20px;
+}
+
+/* Tablet: 2 video */
+@media (max-width: 1200px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 video */
+@media (max-width: 768px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+}
